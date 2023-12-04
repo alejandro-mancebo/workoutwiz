@@ -1,7 +1,8 @@
 # WorkoutWiz Web App
 
-- [Backend folder](https://github.com/alejandro-mancebo/natural-disaster-track/blob/main/backend/README.md)
-- [Frontend folder](https://github.com/alejandro-mancebo/natural-disaster-track/blob/main/frontend/README.md)
+### [Backend folder](https://github.com/alejandro-mancebo/natural-disaster-track/blob/main/backend/README.md)
+
+### [Frontend folder](https://github.com/alejandro-mancebo/natural-disaster-track/blob/main/frontend/README.md)
 
 
 This is a full-stack WorkoutWiz web application built with the MERN stack (MongoDB, Express.js, React, Node.js). It allows users to search for workout, filter them using a search bar, create , mofidy and cancel a week plan. User authentication is implemented using JSON Web Tokens (JWT). The frontend is built with React and TypeScript, and TypeScript is used for styling.
@@ -20,7 +21,6 @@ This is a full-stack WorkoutWiz web application built with the MERN stack (Mongo
 -	Compare result
 -	User authentication: User authentication is implemented using JSON Web Tokens (JWT). Users can register, log in, and securely access their bookings and account information.
 
-
 ## Technologies Used
 
 - Frontend: React, TypeScript, TailwindCSS, Axios
@@ -31,35 +31,42 @@ This is a full-stack WorkoutWiz web application built with the MERN stack (Mongo
 1. Clone the repository:
 
 ```
-git clone https://github.com/kachunone/campsite-booking-web-frontend.git
+git clone git@github.com:alejandro-mancebo/workoutwiz.git
 ```
 
-2. Install the dependencies:
+2. Install the frontend dependencies:
 
 ```
-cd campsite-booking-app
+cd frontend
 npm install
 ```
 
-3. Set up the backend server:
+3. Install the backend dependencies:
 
-- Follow the instructions provided in the backend repository at [Backend Repository](https://github.com/kachunone/campsite-booking-web-backend.git) to install and configure the backend server.
+```
+cd backend
+npm install
+```
 
-4. Configure environment variables:
+4. Set up the backend server:
+
+- Follow the instructions provided in the backend repository at [Backend Repository](https://github.com/alejandro-mancebo/workoutwiz/tree/main/backend) to install and configure the backend server.
+
+5. Configure environment variables:
 
 - Create a .env file in the root directory of the frontend.
 - Provide the necessary environment variables, such as API endpoints in the .env file.
 
-5. Start the development server:
+6. Start the development server:
 
 ```
-npm run dev
+npm run start
 ```
 
 The app will be running at http://localhost:5173.
 
 
-## React + TypeScript + Vite
+# React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

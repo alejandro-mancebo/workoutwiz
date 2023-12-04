@@ -1,8 +1,8 @@
 # WorkoutWiz Web App
 
-### [Backend folder](https://github.com/alejandro-mancebo/natural-disaster-track/blob/main/backend/README.md)
+### [Backend folder](https://github.com/alejandro-mancebo/workoutwiz/blob/main/backend/README.md)
 
-### [Frontend folder](https://github.com/alejandro-mancebo/natural-disaster-track/blob/main/frontend/README.md)
+### [Frontend folder](https://github.com/alejandro-mancebo/workoutwiz/blob/main/frontend/README.md)
 
 
 This is a full-stack WorkoutWiz web application built with the MERN stack (MongoDB, Express.js, React, Node.js). It allows users to search for workout, filter them using a search bar, create , mofidy and cancel a week plan. User authentication is implemented using JSON Web Tokens (JWT). The frontend is built with React and TypeScript, and TypeScript is used for styling.

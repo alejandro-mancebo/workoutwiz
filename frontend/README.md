@@ -8,7 +8,7 @@
 -	TailwindCSS
 -	Axios
 
-*** Frontend Link
+### Frontend Link
 ```
 https://workoutwiz.onrender.com
 ```

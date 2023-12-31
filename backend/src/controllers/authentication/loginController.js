@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 import bycrypt from 'bcrypt';
 import { validationResult } from "express-validator";
-import UserAuth from "../../models/userAuth.model.js";
+import UserAuths from "../../models/userAuths.model.js";
 
 
 const { ACCESS_TOKEN_SECRET, REFRESH_TOKEN_SECRET } = process.env;
@@ -21,7 +21,7 @@ const handleLoginController = async (request, response) => {
   const { email, password } = request.body.user;
 
   // Find and check if there are any user. If there aren't return
-  const foundUser = await UserAuth.findOne({ email: email }).exec();
+  const foundUser = await UserAuths.findOne({ email: email }).exec();
   if (!foundUser) return response.sendStatus(401); // Unauthorized
 
   try {
@@ -41,13 +41,13 @@ const handleLoginController = async (request, response) => {
 
       // Changed to let keyword
       let refreshTokenArray = !cookies?.refresgToken
-        ? foundUser.refreshToken
-        : foundUser.refreshToken.filter(rt => rt !== cookies.refreshToken);
+        ? foundUser.refresh_token
+        : foundUser.refresh_token.filter(rt => rt !== cookies.refreshToken);
 
       if (cookies?.refresh) {
 
         const refreshToken = cookies.refreshToken;
-        const foundToken = await UserAuth.findOne({ refreshToken: refreshToken }).exec();
+        const foundToken = await UserAuths.findOne({ refresh_token: refreshToken }).exec();
 
         // Detected refresh token reuse!
         if (!foundToken) {
@@ -57,7 +57,7 @@ const handleLoginController = async (request, response) => {
       }
 
       // Save refreshToken to the user in the database
-      foundUser.refreshToken = [...refreshTokenArray, refreshToken];
+      foundUser.refresh_token = [...refreshTokenArray, refreshToken];
       await foundUser.save();
 
       // Create Secure Cookie with access token

@@ -1,7 +1,7 @@
 import { validationResult } from 'express-validator';
 import bcrypt from 'bcrypt';
 import mongoose from "mongoose";
-import UserAuth from '../../models/userAuth.model.js';
+import UserAuths from '../../models/userAuths.model.js';
 
 
 const handleSignupController = async (request, response) => {
@@ -15,10 +15,13 @@ const handleSignupController = async (request, response) => {
   const { username, email, password } = request.body.newUser;
 
   // Check for duplicate user email in the database
-  const duplicatedUser = await UserAuth.findOne({ email: email }).exec();
-  if (duplicatedUser) {
+  const duplicatedEmail = await UserAuths.findOne({ email: email }).exec();
+  if (duplicatedEmail) return response.sendStatus(409); // Conflict
+
+  // Check for duplicate username in the database
+  const duplicatedUsername = await UserAuths.findOne({ username: username }).exec();
+  if (duplicatedUsername)
     return response.sendStatus(409); // Conflict
-  }
 
   // Start mongoose session to the transaction
   const session = await mongoose.startSession();
@@ -30,7 +33,7 @@ const handleSignupController = async (request, response) => {
     const hashedPassword = await bcrypt.hash(password, 12);
 
     // create new user with encrypted password
-    const createNewUser = new UserAuth({
+    const createNewUser = new UserAuths({
       username: username,
       email: email,
       password: hashedPassword,

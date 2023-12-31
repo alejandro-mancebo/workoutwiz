@@ -7,9 +7,16 @@ import corsOptions from './src/config/corsOptions.js';
 import cookieParser from 'cookie-parser';
 import { connectMongoDB } from './src/config/mongodb.js';
 
-// Public API routes
+// Authentication
 import SignupRoute from './src/routes/authentication/signupRoute.js';
 import LoginRoute from './src/routes/authentication/loginRoute.js';
+
+// Api
+import UserProfileRoute from './src/routes/api/userProfileRoute.js';
+import MuscleGroupRoute from './src/routes/api/muscleGroupRoute.js';
+import MuscleRoute from './src/routes/api/muscleRoute.js';
+import EquipmentRoute from './src/routes/api/equipmentRoute.js';
+import ExerciseLibraryRoute from './src/routes/api/exerciseLibraryRoute.js';
 
 const PORT = process.env.SERVER_PORT || 5000;
 
@@ -34,6 +41,15 @@ app.use('/signup', SignupRoute);
 app.use('/login', LoginRoute);
 
 
+// Api
+app.use('/api/profile', UserProfileRoute);
+app.use('/api/muscle-group', MuscleGroupRoute);
+app.use('/api/muscle', MuscleRoute);
+app.use('/api/equipment', EquipmentRoute);
+app.use('/api/exercise-library', ExerciseLibraryRoute);
+
+// app.use('/api/getcreate-user-profile', UserProfileRoute);
+
 // catch error from the previous middlewares
 app.use((error, request, response, next) => {
 
@@ -51,10 +67,10 @@ try {
   await connectMongoDB();
 // list server on port
   app.listen(PORT, () => {
-  console.log('Server is listening on port: ' + PORT);
+    console.log('Server is listening on port: ', PORT);
   });
 
 } catch (error) {
-  console.error('connectMongoDB:', error.message);
+  console.error('MongoDB error connection:', error.message);
 }
 

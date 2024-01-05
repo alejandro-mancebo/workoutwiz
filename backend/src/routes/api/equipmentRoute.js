@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import EquipmentsController from '../../controllers/userProfile/equipmentController.js';
+import EquipmentsController from '../../controllers/workout/equipmentController.js';
 
 const router = Router();
 

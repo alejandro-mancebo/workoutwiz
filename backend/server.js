@@ -17,6 +17,9 @@ import MuscleGroupRoute from './src/routes/api/muscleGroupRoute.js';
 import MuscleRoute from './src/routes/api/muscleRoute.js';
 import EquipmentRoute from './src/routes/api/equipmentRoute.js';
 import ExerciseLibraryRoute from './src/routes/api/exerciseLibraryRoute.js';
+import WorkoutPlanRoute from './src/routes/api/workoutPlanRoute.js';
+import WorkoutPlanDetailRoute from './src/routes/api/workoutPlanDetailRoute.js';
+import WorkoutsCompletedRoute from './src/routes/api/workoutsCompletedRoute.js';
 
 const PORT = process.env.SERVER_PORT || 5000;
 
@@ -47,6 +50,9 @@ app.use('/api/muscle-group', MuscleGroupRoute);
 app.use('/api/muscle', MuscleRoute);
 app.use('/api/equipment', EquipmentRoute);
 app.use('/api/exercise-library', ExerciseLibraryRoute);
+app.use('/api/workout-plan', WorkoutPlanRoute);
+app.use('/api/workout-plan-detail', WorkoutPlanDetailRoute);
+app.use('/api/workouts-completed', WorkoutsCompletedRoute);
 
 // app.use('/api/getcreate-user-profile', UserProfileRoute);
 

@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import ExerciseLibrariesController from '../../controllers/userProfile/exerciseLibraryController.js';
+import ExerciseLibrariesController from '../../controllers/workout/exerciseLibraryController.js';
 
 const router = Router();
 

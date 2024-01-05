@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import UserProfilesController from '../../controllers/userProfile/userProfileController.js';
+import UserProfilesController from '../../controllers/workout/userProfileController.js';
 
 const router = Router();
 

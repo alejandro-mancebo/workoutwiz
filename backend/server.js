@@ -20,6 +20,7 @@ import ExerciseLibraryRoute from './src/routes/api/exerciseLibraryRoute.js';
 import WorkoutPlanRoute from './src/routes/api/workoutPlanRoute.js';
 import WorkoutPlanDetailRoute from './src/routes/api/workoutPlanDetailRoute.js';
 import WorkoutsCompletedRoute from './src/routes/api/workoutsCompletedRoute.js';
+import SettingRoute from './src/routes/api/settingRoute.js';
 
 const PORT = process.env.SERVER_PORT || 5000;
 
@@ -43,6 +44,8 @@ app.use(cookieParser());
 app.use('/signup', SignupRoute);
 app.use('/login', LoginRoute);
 
+// Verify Authorize token for the following APIs
+//app.use(AuthenticateToken);
 
 // Api
 app.use('/api/profile', UserProfileRoute);
@@ -53,6 +56,7 @@ app.use('/api/exercise-library', ExerciseLibraryRoute);
 app.use('/api/workout-plan', WorkoutPlanRoute);
 app.use('/api/workout-plan-detail', WorkoutPlanDetailRoute);
 app.use('/api/workouts-completed', WorkoutsCompletedRoute);
+app.use('/api/settings', SettingRoute);
 
 // app.use('/api/getcreate-user-profile', UserProfileRoute);
 
@@ -71,7 +75,8 @@ app.use((error, request, response, next) => {
 // Connect to MongoDB
 try {
   await connectMongoDB();
-// list server on port
+
+  // list server on port
   app.listen(PORT, () => {
     console.log('Server is listening on port: ', PORT);
   });

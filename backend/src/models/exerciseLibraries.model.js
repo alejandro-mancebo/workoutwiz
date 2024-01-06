@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import { ExerciseTypesEnum, DifficultyLevelsEnum } from '../config/globalValues.js';
 
 const exerciseLibrariesSchema = new mongoose.Schema(
   {
@@ -10,7 +11,7 @@ const exerciseLibrariesSchema = new mongoose.Schema(
     },
     category: {
       type: String,
-      enum: ['cardio', 'strength', 'training', 'flexibility']
+      enum: ExerciseTypesEnum,
     },
     description: {
       type: String,
@@ -26,7 +27,7 @@ const exerciseLibrariesSchema = new mongoose.Schema(
     },
     difficulty_level: {
       type: String,
-      enum: ['beginner', 'intermediate', 'advanced']
+      enum: DifficultyLevelsEnum
     },
     muscle_id: {
       type: mongoose.Schema.Types.ObjectId,

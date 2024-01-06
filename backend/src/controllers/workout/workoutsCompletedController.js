@@ -68,7 +68,6 @@ const getWorkoutsCompleted = async (request, response) => {
 
   const foundWorkoutCompleted = await WorkoutsCompleted.find({}).sort({ week_number: 1, day_week: 1 }).exec();
 
-
   response.json(foundWorkoutCompleted);
 
 };

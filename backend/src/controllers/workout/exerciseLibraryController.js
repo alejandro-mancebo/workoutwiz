@@ -63,16 +63,21 @@ const createNewExercise = async (request, response) => {
     } = request.body.exercise;
 
 
-    exercise_name
-    category
-    description
-    equipment_needed
-    image_url
-    video_url
-    difficulty_level
-    muscle_id
-    equipment_id
+    // exercise_name
+    // category
+    // description
+    // equipment_needed
+    // image_url
+    // video_url
+    // difficulty_level
+    // muscle_id
+    // equipment_id
 
+    // Find if there is a muscle and equipment use for the exercise
+    const findconflict = await ExerciseLibraries.findOne({ muscle_id, equipment_id }).exec();
+    if (findconflict) return response.sendStatus(409); // Conflict
+
+    // Find if there is a exercise with the same name
     const foundExercise = await ExerciseLibraries.findOne({ exercise_name }).exec();
     if (foundExercise) return response.sendStatus(409); // Conflict
 

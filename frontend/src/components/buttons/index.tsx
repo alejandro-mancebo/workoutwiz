@@ -1,9 +1,29 @@
-export const Button = ({ children }: any) => {
+import { Link } from "react-router-dom";
+
+type ButtonType = "submit" | "reset" | "button" | undefined;
+type ButtonProps = {
+  children: string;
+  type: ButtonType;
+};
+
+export const Button = ({ children, type }: ButtonProps) => {
   return (
-    <button
-      type="button"
-      className="font-monserrat font-bold text-xl bg-ww-red border rounded-xl text-white py-2 w-48 transition ease-in-out hover:bg-transparent hover:border-ww-red hover:duration-700 tracking-wide"
-    >
+    <button type={type} className="button w-48">
+      {children}
+    </button>
+  );
+};
+
+export const LinkButton = ({ children, link }: any) => {
+  return (
+    <Link to={link} className="button px-10">
+      {children}
+    </Link>
+  );
+};
+export const FunctionButton = ({ children, onClick }: any) => {
+  return (
+    <button type="button" className="button px-8" onClick={onClick}>
       {children}
     </button>
   );

@@ -15,6 +15,10 @@ const IMAGES = {
     img: new URL("./doing-exercises-outdoor.jpg", import.meta.url).href,
     alt: "Athlete doing exercises outdoor in a city.",
   },
+  exercise_1: {
+    img: new URL("./chest.png", import.meta.url).href,
+    alt: "Chest exercise.",
+  },
 };
 
 export default IMAGES;

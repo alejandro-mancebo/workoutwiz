@@ -1,19 +1,19 @@
-interface Url {
+type TUrl = {
   src: string;
   alt: string;
   position?: boolean;
-}
+};
 
-export const Image = ({ src, alt, position }: Url) => {
+export const Image = ({ src, alt, position }: TUrl) => {
   let location;
   if (position) location = true;
   else location = false;
   return (
     <div className="aspect-3/2">
       <img
-        className={`bg-white w-full ${
+        className={`w-full bg-white ${
           location ? "border-l-8" : "border-r-8"
-        } object-cover object-center border-ww-red`}
+        } border-ww-red object-cover object-center`}
         src={src}
         alt={alt}
       />

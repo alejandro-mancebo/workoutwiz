@@ -8,9 +8,9 @@ export const WorkoutPlan = () => {
       </h2>
       <ul className="list-disc pl-10 text-2xl">
         {[
-          ["Create plan", "/home"],
-          ["Modify plan", "/"],
-          ["Delete plan", "#"],
+          ["Create plan", "/workout"],
+          ["Modify plan", "/modify-plan"],
+          ["Delete plan", "/home"],
         ].map(([title, url]) => (
           <li className="list-disc py-1 text-2xl text-ww-red ">
             <Link

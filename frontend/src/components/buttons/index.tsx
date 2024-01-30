@@ -21,6 +21,7 @@ export const LinkButton = ({ children, link }: any) => {
     </Link>
   );
 };
+
 export const FunctionButton = ({ children, onClick }: any) => {
   return (
     <button type="button" className="button px-8" onClick={onClick}>

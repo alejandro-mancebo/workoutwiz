@@ -40,11 +40,12 @@ export const WorkoutPlanDetail = () => {
     setDetailList([...detailList, newData]);
   };
 
-  const handleChangeDetail = () => {
-    console.log("handleChangeDetail");
+  const handleChangeDetail = (index: number) => {
+    console.log("handleChangeDetail:", index);
   };
 
   const handleDeleteDetail = (index: number) => {
+    console.log("handleDeleteDetail", index);
     if (index > -1) {
       detailList.splice(index, 1);
     }

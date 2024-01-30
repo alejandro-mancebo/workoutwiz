@@ -1,0 +1,450 @@
+[
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b6b"
+    },
+    "exercise_name": "Bench Press",
+    "image_url": "/src/assets/images/chest.png",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b6c"
+    },
+    "exercise_name": "Push-Ups",
+    "image_url": "/src/assets/images/doing-exercises-outdoor.jpg",
+    "difficulty_level": "Beginner"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b6d"
+    },
+    "exercise_name": "Chest Dips",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b6e"
+    },
+    "exercise_name": "Cable Chest Press",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b6f"
+    },
+    "exercise_name": "Pull-Ups",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b70"
+    },
+    "exercise_name": "Lat Pulldown",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b71"
+    },
+    "exercise_name": "Barbell Shrugs",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b72"
+    },
+    "exercise_name": "Dumbbell Upright Rows",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b73"
+    },
+    "exercise_name": "Seated Cable Rows",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b74"
+    },
+    "exercise_name": "Dumbbell Bent-Over Rows",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b75"
+    },
+    "exercise_name": "Deadlifts",
+    "image_url": "",
+    "difficulty_level": "Advanced"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b76"
+    },
+    "exercise_name": "Hyperextensions",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b77"
+    },
+    "exercise_name": "Shoulder Press",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b78"
+    },
+    "exercise_name": "Lateral Raises",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b79"
+    },
+    "exercise_name": "Bicep Curls",
+    "image_url": "",
+    "difficulty_level": "Beginner"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b7a"
+    },
+    "exercise_name": "Hammer Curls",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b7b"
+    },
+    "exercise_name": "Tricep Dips",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b7c"
+    },
+    "exercise_name": "Tricep Pushdowns",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b7d"
+    },
+    "exercise_name": "Hammer Curls",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b7e"
+    },
+    "exercise_name": "Reverse Curls",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b7f"
+    },
+    "exercise_name": "Reverse Curls",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b80"
+    },
+    "exercise_name": "Hammer Curls",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b81"
+    },
+    "exercise_name": "Crunches",
+    "image_url": "",
+    "difficulty_level": "Beginner"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b82"
+    },
+    "exercise_name": "Leg Raises",
+    "image_url": "",
+    "difficulty_level": "Beginner"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b83"
+    },
+    "exercise_name": "Russian Twists",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b84"
+    },
+    "exercise_name": "Side Planks",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b85"
+    },
+    "exercise_name": "Oblique Crunches",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b86"
+    },
+    "exercise_name": "Bicycle Crunches",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b87"
+    },
+    "exercise_name": "Planks",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b88"
+    },
+    "exercise_name": "Vacuum Exercise",
+    "image_url": "",
+    "difficulty_level": "Beginner"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b89"
+    },
+    "exercise_name": "Squats",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b8a"
+    },
+    "exercise_name": "Leg Press",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b8b"
+    },
+    "exercise_name": "Romanian Deadlifts",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b8c"
+    },
+    "exercise_name": "Leg Curls",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b8d"
+    },
+    "exercise_name": "Lunges",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b8e"
+    },
+    "exercise_name": "Hip Thrusts",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b8f"
+    },
+    "exercise_name": "Side Leg Raises",
+    "image_url": "",
+    "difficulty_level": "Beginner"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b90"
+    },
+    "exercise_name": "Clamshells",
+    "image_url": "",
+    "difficulty_level": "Beginner"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b91"
+    },
+    "exercise_name": "Side Leg Raises",
+    "image_url": "",
+    "difficulty_level": "Beginner"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b92"
+    },
+    "exercise_name": "Clamshells",
+    "image_url": "",
+    "difficulty_level": "Beginner"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b93"
+    },
+    "exercise_name": "Hanging Leg Raises",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b94"
+    },
+    "exercise_name": "Mountain Climbers",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b95"
+    },
+    "exercise_name": "Inner Thigh Press",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b96"
+    },
+    "exercise_name": "Cable Hip Adduction",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b97"
+    },
+    "exercise_name": "Lunges",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b98"
+    },
+    "exercise_name": "Leg Swings",
+    "image_url": "",
+    "difficulty_level": "Beginner"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b99"
+    },
+    "exercise_name": "Sumo Squats",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b9a"
+    },
+    "exercise_name": "Inner Thigh Stretch",
+    "image_url": "",
+    "difficulty_level": "Beginner"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b9b"
+    },
+    "exercise_name": "Calf Raises",
+    "image_url": "",
+    "difficulty_level": "Beginner"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b9c"
+    },
+    "exercise_name": "Seated Calf Raises",
+    "image_url": "",
+    "difficulty_level": "Beginner"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b9d"
+    },
+    "exercise_name": "Standing Calf Raises",
+    "image_url": "",
+    "difficulty_level": "Beginner"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b9e"
+    },
+    "exercise_name": "Toe Tapping",
+    "image_url": "",
+    "difficulty_level": "Beginner"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4b9f"
+    },
+    "exercise_name": "Toe Raises",
+    "image_url": "",
+    "difficulty_level": "Beginner"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4ba0"
+    },
+    "exercise_name": "Wrist Pronation with Dumbbell",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4ba1"
+    },
+    "exercise_name": "Wrist Supination with Dumbbell",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  },
+  {
+    "_id": {
+      "$oid": "6590c6a2ff9a4fddfb3f4ba2"
+    },
+    "exercise_name": "Reverse Wrist Curls",
+    "image_url": "",
+    "difficulty_level": "Intermediate"
+  }
+]
